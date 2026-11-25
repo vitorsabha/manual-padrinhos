@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manual dos Padrinhos</title>
+<meta name="description" content="Está chegando o grande dia — o guia de roupas para padrinhos e madrinhas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --papel: #f8f3ec;
+    --cartao: #fffdf9;
+    --tinta: #3a3631;
+    --tinta-suave: #7a7168;
+    --dourado: #b08d57;
+    --linha: #e6dccf;
+    --pele: #eadbca;
+    --pele-traco: #cfb79c;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--papel);
+    color: var(--tinta);
+    font-family: "Jost", system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 0 16px 64px; }
+
+  /* topo */
+  .topo { text-align: center; padding: 72px 0 40px; }
+  .sobre {
+    font-size: 12px; letter-spacing: .28em; text-transform: uppercase;
+    color: var(--dourado); margin: 0 0 18px;
+  }
+  h1 {
+    font-family: "Cormorant Garamond", serif; font-weight: 500;
+    font-size: clamp(42px, 11vw, 72px); line-height: 1.02; margin: 0;
+  }
+  h1 em { font-style: italic; color: var(--dourado); }
+  .ornamento { display: block; margin: 26px auto; width: 120px; height: 14px; }
+  .intro { max-width: 30em; margin: 0 auto; color: var(--tinta-suave); }
+
+  /* seções */
+  section {
+    background: var(--cartao);
+    border: 1px solid var(--linha);
+    border-radius: 22px;
+    padding: 40px 24px 36px;
+    margin-top: 28px;
+  }
+  h2 {
+    font-family: "Cormorant Garamond", serif; font-weight: 600;
+    font-size: 36px; line-height: 1.1; text-align: center; margin: 0 0 4px;
+  }
+  .rotulo {
+    text-align: center; font-size: 12px; letter-spacing: .24em;
+    text-transform: uppercase; color: var(--dourado); margin: 0 0 28px;
+  }
+  .figuras {
+    display: flex; justify-content: center; align-items: flex-end;
+    gap: 4px; margin: 0 auto 28px;
+  }
+  .figuras figure { margin: 0; flex: 0 1 150px; text-align: center; }
+  .figuras svg { width: 100%; height: auto; display: block; }
+  .figuras figcaption {
+    font-family: "Cormorant Garamond", serif; font-style: italic;
+    font-size: 18px; color: var(--tinta-suave); margin-top: 6px;
+  }
+  .padrinhos .figuras figure { flex-basis: 128px; }
+
+  .itens { list-style: none; padding: 0; margin: 0 auto; max-width: 26em; }
+  .itens li {
+    display: flex; align-items: center; gap: 14px;
+    padding: 14px 0; border-top: 1px solid var(--linha);
+  }
+  .itens li:last-child { border-bottom: 1px solid var(--linha); }
+  .amostra {
+    flex: none; width: 34px; height: 34px; border-radius: 50%;
+    border: 1px solid rgba(0,0,0,.08);
+  }
+  .itens strong { display: block; font-weight: 500; }
+  .itens span { color: var(--tinta-suave); font-size: 15px; }
+  .multicor { background: conic-gradient(#ef8fa8, #f4bf4f, #5fb7a8, #9c8be0, #ef8fa8); }
+
+  .aviso {
+    max-width: 26em; margin: 26px auto 0; padding: 18px 20px;
+    border-radius: 16px; background: #fbf1ea; text-align: center;
+  }
+  .aviso p { margin: 0; }
+  .aviso .proibidas { display: flex; justify-content: center; gap: 14px; margin-bottom: 10px; }
+  .riscada { position: relative; }
+  .riscada::after {
+    content: ""; position: absolute; left: -4px; right: -4px; top: 50%;
+    height: 3px; border-radius: 2px; background: #f07a6e; transform: rotate(-45deg);
+  }
+
+  footer { text-align: center; padding: 48px 0 0; }
+  footer p {
+    font-family: "Cormorant Garamond", serif; font-style: italic;
+    font-size: 24px; margin: 0; line-height: 1.3;
+  }
+  footer small { display: block; margin-top: 8px; color: var(--tinta-suave); font-size: 14px; }
+
+  @media (min-width: 640px) {
+    section { padding: 48px 40px 44px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header class="topo">
+    <p class="sobre">Manual dos padrinhos e madrinhas</p>
+    <h1>Está chegando<br>o <em>grande dia</em></h1>
+    <svg class="ornamento" viewBox="0 0 120 14" aria-hidden="true">
+      <path d="M0 7 H48 M72 7 H120" stroke="#b08d57" stroke-width="1"/>
+      <path d="M60 1 L66 7 L60 13 L54 7 Z" fill="none" stroke="#b08d57" stroke-width="1"/>
+    </svg>
+    <p class="intro">Vocês foram escolhidos para estar do nosso lado. Preparamos este guia rapidinho para todo mundo chegar lindo e combinando.</p>
+  </header>
+
+  <!-- PADRINHOS -->
+  <section class="padrinhos" aria-labelledby="t-padrinhos">
+    <h2 id="t-padrinhos">Padrinhos</h2>
+    <p class="rotulo">O traje</p>
+
+    <div class="figuras">
+      <figure>
+        <svg viewBox="0 0 120 410" role="img" aria-label="Manequim de terno cinza claro com gravata azul claro">
+          <ellipse cx="60" cy="400" rx="34" ry="5" fill="#000" opacity=".06"/>
+          <!-- calça -->
+          <path d="M43 186 L59 186 L58 384 L46 384 Z" fill="#b7bbc1"/>
+          <path d="M61 186 L77 186 L74 384 L62 384 Z" fill="#aeb2b9"/>
+          <path d="M52 200 L52 380 M68 200 L68 380" stroke="#9fa4ab" stroke-width=".8"/>
+          <!-- sapatos -->
+          <path d="M44 383 h15 q2 8 -4 9 h-14 q-3 -4 3 -9 Z" fill="#3d342d"/>
+          <path d="M61 383 h14 q6 5 3 9 h-14 q-5 -1 -3 -9 Z" fill="#3d342d"/>
+          <!-- mãos -->
+          <ellipse cx="33" cy="196" rx="5" ry="7" fill="var(--pele)" stroke="var(--pele-traco)" stroke-width=".8"/>
+          <ellipse cx="87" cy="196" rx="5" ry="7" fill="var(--pele)" stroke="var(--pele-traco)" stroke-width=".8"/>
+          <!-- mangas -->
+          <path d="M38 66 Q30 100 31 140 L30 190 L40 190 L42 140 L45 96 Z" fill="#aeb2b9"/>
+          <path d="M82 66 Q90 100 89 140 L90 190 L80 190 L78 140 L75 96 Z" fill="#a7abb2"/>
+          <!-- pescoço e cabeça -->
+          <path d="M55 40 h10 v20 h-10 Z" fill="var(--pele)" stroke="var(--pele-traco)" stroke-width=".8"/>
+          <ellipse cx="60" cy="30" rx="10.5" ry="13.5" fill="var(--pele)" stroke="var(--pele-traco)" stroke-width=".8"/>
+          <!-- paletó -->
+          <path d="M39 64 Q60 55 81 64 L80 190 Q60 197 40 190 Z" fill="#c2c6cc"/>
+          <!-- camisa -->
+          <path d="M52 57 L68 57 L60 112 Z" fill="#fbfbfa"/>
+          <!-- gravata -->
+          <path d="M57 60 L63 60 L62 67 L58 67 Z" fill="#8fbfe3"/>
+          <path d="M58 67 L62 67 L65.5 104 L60 111 L54.5 104 Z" fill="#a3cdee"/>
+          <!-- lapelas -->
+          <path d="M52 57 L45 74 L50 78 L46 82 L60 118 Z" fill="#b3b7bd"/>
+          <path d="M68 57 L75 74 L70 78 L74 82 L60 118 Z" fill="#aaaeb5"/>
+          <!-- detalhes -->
+          <circle cx="60" cy="130" r="1.6" fill="#8e939a"/>
+          <circle cx="60" cy="148" r="1.6" fill="#8e939a"/>
+          <path d="M66 150 h10" stroke="#9a9fa6" stroke-width="1.2"/>
+          <path d="M69 92 l7 -1" stroke="#fbfbfa" stroke-width="2" stroke-linecap="round"/>
+          <path d="M60 118 L60 192" stroke="#a3a8af" stroke-width=".8"/>
+        </svg>
+      </figure>
+    </div>
+
+    <ul class="itens">
+      <li>
+        <span class="amostra" style="background:#c2c6cc"></span>
+        <div><strong>Terno cinza claro</strong><span>Paletó e calça no mesmo tom.</span></div>
+      </li>
+      <li>
+        <span class="amostra" style="background:#a3cdee"></span>
+        <div><strong>Gravata azul claro</strong><span>Essa a gente escolhe — é o toque que une todos os padrinhos.</span></div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- MADRINHAS -->
+  <section class="madrinhas" aria-labelledby="t-madrinhas">
+    <h2 id="t-madrinhas">Madrinhas</h2>
+    <p class="rotulo">Algumas inspirações</p>
+
+    <div class="figuras">
+      <!-- 1: alças finas, evasê, rosa -->
+      <figure>
+        <svg viewBox="0 0 120 410" role="img" aria-label="Manequim com vestido longo rosa de alças finas">
+          <ellipse cx="60" cy="400" rx="42" ry="5" fill="#000" opacity=".06"/>
+          <path d="M46 62 Q38 110 39 168" stroke="var(--pele-traco)" stroke-width="7.6" fill="none" stroke-linecap="round"/>
+          <path d="M46 62 Q38 110 39 168" stroke="var(--pele)" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path d="M74 62 Q82 110 81 168" stroke="var(--pele-traco)" stroke-width="7.6" fill="none" stroke-linecap="round"/>
+          <path d="M74 62 Q82 110 81 168" stroke="var(--pele)" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path d="M56 40 h8 v18 h-8 Z" fill="var(--pele)" stroke="var(--pele-traco)" stroke-width=".8"/>
+          <path d="M44 61 Q60 54 76 61 L73 84 L47 84 Z" fill="var(--pele)" stroke="var(--pele-traco)" stroke-width=".8"/>
+          <ellipse cx="60" cy="30" rx="10" ry="13" fill="var(--pele)" stroke="var(--pele-traco)" stroke-width=".8"/>
+          <path d="M50 60 L51 77 M70 60 L69 77" stroke="#e27894" stroke-width="1.4"/>
+          <path d="M48 77 Q60 73 72 77 L68 118 C80 200 92 300 102 386 Q60 396 18 386 C28 300 40 200 52 118 Z" fill="#ef8fa8"/>
+          <path d="M52 118 Q60 121 68 118" stroke="#e27894" stroke-width="1.4" fill="none"/>
+          <path d="M58 130 C54 220 46 300 40 384 M64 130 C70 220 78 300 84 384" stroke="#e27894" stroke-width=".9" fill="none" opacity=".7"/>
+        </svg>
+        <figcaption>rosa</figcaption>
+      </figure>
+
+      <!-- 2: um ombro só, reto, amarelo -->
+      <figure>
+        <svg viewBox="0 0 120 410" role="img" aria-label="Manequim com vestido longo amarelo de um ombro só">
+          <ellipse cx="60" cy="400" rx="32" ry="5" fill="#000" opacity=".06"/>
+          <path d="M46 62 Q39 110 40 168" stroke="var(--pele-traco)" stroke-width="7.6" fill="none" stroke-linecap="round"/>
+          <path d="M46 62 Q39 110 40 168" stroke="var(--pele)" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path d="M74 62 Q81 110 80 168" stroke="var(--pele-traco)" stroke-width="7.6" fill="none" stroke-linecap="round"/>
+          <path d="M74 62 Q81 110 80 168" stroke="var(--pele)" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path d="M56 40 h8 v18 h-8 Z" fill="var(--pele)" stroke="var(--pele-traco)" stroke-width=".8"/>
+          <path d="M44 61 Q60 54 76 61 L73 84 L47 84 Z" fill="var(--pele)" stroke="var(--pele-traco)" stroke-width=".8"/>
+          <ellipse cx="60" cy="30" rx="10" ry="13" fill="var(--pele)" stroke="var(--pele-traco)" stroke-width=".8"/>
+          <path d="M47 82 L71 59 Q76 60 76 65 L69 118 C73 200 78 300 84 388 Q60 395 36 388 C41 300 46 200 51 118 Z" fill="#f4bf4f"/>
+          <path d="M51 118 Q60 121 69 118" stroke="#e3a832" stroke-width="1.2" fill="none"/>
+          <path d="M69 250 L74 388" stroke="#e3a832" stroke-width="1" fill="none"/>
+          <path d="M57 125 C56 220 54 300 52 386" stroke="#e3a832" stroke-width=".9" fill="none" opacity=".7"/>
+        </svg>
+        <figcaption>amarelo</figcaption>
+      </figure>
+
+      <!-- 3: decote V, manguinha, verde-água -->
+      <figure>
+        <svg viewBox="0 0 120 410" role="img" aria-label="Manequim com vestido longo verde-água de decote V e manguinhas">
+          <ellipse cx="60" cy="400" rx="46" ry="5" fill="#000" opacity=".06"/>
+          <path d="M44 66 Q37 112 38 168" stroke="var(--pele-traco)" stroke-width="7.6" fill="none" stroke-linecap="round"/>
+          <path d="M44 66 Q37 112 38 168" stroke="var(--pele)" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path d="M76 66 Q83 112 82 168" stroke="var(--pele-traco)" stroke-width="7.6" fill="none" stroke-linecap="round"/>
+          <path d="M76 66 Q83 112 82 168" stroke="var(--pele)" stroke-width="6" fill="none" stroke-linecap="round"/>
+          <path d="M56 40 h8 v18 h-8 Z" fill="var(--pele)" stroke="var(--pele-traco)" stroke-width=".8"/>
+          <path d="M44 61 Q60 54 76 61 L73 84 L47 84 Z" fill="var(--pele)" stroke="var(--pele-traco)" stroke-width=".8"/>
+          <ellipse cx="60" cy="30" rx="10" ry="13" fill="var(--pele)" stroke="var(--pele-traco)" stroke-width=".8"/>
+          <path d="M43 60 L54 58 L60 84 L66 58 L77 60 L83 78 L74 80 L69 118 C84 210 100 300 108 386 Q60 398 12 386 C20 300 36 210 51 118 L46 80 L37 78 Z" fill="#5fb7a8"/>
+          <path d="M50 116 Q60 121 70 116 L70 121 Q60 126 50 121 Z" fill="#4a9f91"/>
+          <path d="M57 130 C50 220 38 300 30 384 M63 130 C70 220 82 300 90 384 M60 130 L60 390" stroke="#4a9f91" stroke-width=".9" fill="none" opacity=".7"/>
+        </svg>
+        <figcaption>verde-água</figcaption>
+      </figure>
+    </div>
+
+    <ul class="itens">
+      <li>
+        <span class="amostra multicor"></span>
+        <div><strong>Vestido livre, cor livre</strong><span>Escolham o modelo e a cor que mais combinarem com vocês.</span></div>
+      </li>
+      <li>
+        <span class="amostra" style="background:#f4bf4f"></span>
+        <div><strong>Prefiram cores alegres</strong><span>Rosa, amarelo, verde, lilás, coral… quanto mais alegria, melhor.</span></div>
+      </li>
+    </ul>
+
+    <div class="aviso">
+      <div class="proibidas" aria-hidden="true">
+        <span class="amostra riscada" style="background:#262321"></span>
+        <span class="amostra riscada" style="background:#6b4a33"></span>
+      </div>
+      <p><strong>Só pedimos uma coisa:</strong> nada de preto nem marrom.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Obrigado por estarem<br>com a gente nesse dia.</p>
+    <small>Com carinho, os noivos</small>
+  </footer>
+
+</main>
+</body>
+</html>
