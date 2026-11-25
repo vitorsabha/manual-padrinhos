@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Manual dos Padrinhos e Madrinhas</title>
+<title>Manual dos Padrinhos e Madrinhas · Luiza &amp; Vitor</title>
 <meta name="description" content="Está chegando o grande dia. O que vestir: terno cinza claro, camisa branca e gravata azul claro para eles; vestido longo, de modelo e cor livres, para elas.">
 <meta name="theme-color" content="#faf7f2">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="Está chegando o grande dia">
-<meta property="og:description" content="O manual dos padrinhos e madrinhas: o que vestir no casamento.">
+<meta property="og:description" content="Luiza &amp; Vitor · 19 de junho de 2027. O manual dos padrinhos e madrinhas: o que vestir no casamento.">
 <meta property="og:url" content="https://vitorsabha.github.io/manual-padrinhos/">
 <meta property="og:image" content="https://vitorsabha.github.io/manual-padrinhos/og.png">
 <meta property="og:image:width" content="1200">
@@ -110,6 +110,17 @@
   .topo { padding-top: 28px; padding-bottom: 72px; display: grid; gap: 40px; align-items: end; }
   .trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; align-items: end; }
   .trio .arco:nth-child(2) { padding-top: 38px; }
+  .selo {
+    display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 16px;
+    margin-top: 28px; padding: 18px 20px; max-width: 30em;
+    background: var(--papel); border: 1px solid var(--linha); border-radius: 20px;
+  }
+  .casal { font-family: var(--serif); font-size: 32px; line-height: 1; margin: 0; }
+  .casal em { color: var(--azul-tinta); }
+  .quando { margin: 8px 0 0; font-size: 14px; color: var(--suave); }
+  .conta { text-align: center; padding-left: 18px; border-left: 1px solid var(--linha); min-width: 96px; }
+  .conta small { display: block; font-size: 11px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--suave); }
+  .conta strong { display: block; font-family: var(--serif); font-weight: 400; font-size: 50px; line-height: 1; margin: 2px 0; font-variant-numeric: tabular-nums; }
   .descer {
     display: inline-flex; align-items: center; gap: 10px; margin-top: 26px;
     font-size: 14px; font-weight: 600; color: var(--tinta); text-decoration: none;
@@ -292,6 +303,17 @@
       <p class="sobrelinha">Manual dos padrinhos &amp; madrinhas</p>
       <h1>Está chegando<br>o <em>grande dia</em></h1>
       <p class="apoio">Vocês foram escolhidos para estar do nosso lado. Aqui está tudo o que precisam saber para chegar lindos e combinando.</p>
+      <div class="selo">
+        <div>
+          <p class="casal">Luiza <em>&amp;</em> Vitor</p>
+          <p class="quando">Sábado, 19 de junho de 2027</p>
+        </div>
+        <div class="conta" id="conta" hidden aria-live="polite">
+          <small id="conta-antes">faltam</small>
+          <strong id="conta-num"></strong>
+          <small id="conta-depois">dias</small>
+        </div>
+      </div>
       <a class="descer" href="#padrinhos"><span aria-hidden="true">↓</span>Ver o que vestir</a>
     </div>
     <div class="trio surge" role="img" aria-label="Uma madrinha de vestido rosa, um padrinho de terno cinza claro e uma madrinha de vestido verde-água">
@@ -406,11 +428,22 @@
 <footer>
   <div class="miolo surge">
     <p>Obrigado por estarem<br>com a gente <em>nesse dia</em>.</p>
-    <small>Com carinho, os noivos</small>
+    <small>Com carinho, Luiza &amp; Vitor</small>
   </div>
 </footer>
 
 <script>
+  // contagem até 19/06/2027, pela data do celular de quem abre
+  (function () {
+    var hoje = new Date();
+    var dias = Math.round((Date.UTC(2027, 5, 19) - Date.UTC(hoje.getFullYear(), hoje.getMonth(), hoje.getDate())) / 864e5);
+    if (dias < 0) return;
+    var $ = function (id) { return document.getElementById(id); };
+    if (dias === 0) { $('conta-antes').textContent = 'é'; $('conta-num').textContent = 'hoje'; $('conta-depois').textContent = 'o grande dia'; }
+    else if (dias === 1) { $('conta-antes').textContent = 'falta'; $('conta-num').textContent = '1'; $('conta-depois').textContent = 'dia'; }
+    else { $('conta-num').textContent = dias; }
+    $('conta').hidden = false;
+  })();
   (function () {
     var itens = document.querySelectorAll('.surge');
     if (!('IntersectionObserver' in window)) { itens.forEach(function (e) { e.classList.add('visto'); }); return; }
