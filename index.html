@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Manual dos Padrinhos e Madrinhas</title>
-<meta name="description" content="Está chegando o grande dia. O que vestir: terno cinza claro com gravata azul claro para eles, vestido e cor livres para elas.">
+<meta name="description" content="Está chegando o grande dia. O que vestir: terno cinza claro, camisa branca e gravata azul claro para eles; vestido longo, de modelo e cor livres, para elas.">
 <meta name="theme-color" content="#faf7f2">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
@@ -103,7 +103,7 @@
   }
   .legenda {
     display: block; text-align: center; margin-top: 10px;
-    font-family: var(--serif); font-style: italic; font-size: 20px; color: var(--suave);
+    font-family: var(--serif); font-style: italic; font-size: 17px; line-height: 1.25; color: var(--suave);
   }
 
   /* ---------- topo ---------- */
@@ -204,68 +204,80 @@
 <!-- desenhos: cada manequim é desenhado duas vezes, uma em cor e outra em traço, levemente deslocadas -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
+    <!-- o corpo é achatado na vertical (scale .52) e a cabeça fica de fora: proporção de ~8 cabeças -->
     <!-- PADRINHO -->
-    <g id="padrinho" style="stroke-width:1;stroke-linejoin:round;stroke-linecap:round">
-      <ellipse cx="60" cy="400" rx="36" ry="5" style="fill:var(--k-sombra)"/>
-      <path d="M55.5 38 L64.5 38 L65 58 L55 58 Z" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
-      <ellipse cx="60" cy="28" rx="10" ry="13" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
-      <ellipse cx="32" cy="197" rx="4.5" ry="7" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
-      <ellipse cx="88" cy="197" rx="4.5" ry="7" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
-      <path d="M43 184 L59.5 184 L57.5 382 L46 382 Z" style="fill:var(--k-terno2);stroke:var(--k-traco)"/>
-      <path d="M60.5 184 L77 184 L80 380 L68 382 Z" style="fill:var(--k-terno);stroke:var(--k-traco)"/>
-      <path d="M45 381 L58 381 Q59 390 54 391 L41 391 Q39 385 45 381 Z" style="fill:var(--k-sapato);stroke:var(--k-traco)"/>
-      <path d="M67.5 381 L80 379 Q88 383 86 390 L71 390 Q66 388 67.5 381 Z" style="fill:var(--k-sapato);stroke:var(--k-traco)"/>
-      <path d="M39 64 Q29 98 29 140 L28 190 L37.5 191 L40 140 L45 98 Z" style="fill:var(--k-terno2);stroke:var(--k-traco)"/>
-      <path d="M81 64 Q91 98 91 140 L92 190 L82.5 191 L80 140 L75 98 Z" style="fill:var(--k-terno2);stroke:var(--k-traco)"/>
-      <path d="M39 63 Q60 54 81 63 L81 189 Q60 196 39 189 Z" style="fill:var(--k-terno);stroke:var(--k-traco)"/>
-      <path d="M52 56 L68 56 L60 112 Z" style="fill:var(--k-camisa);stroke:var(--k-traco)"/>
-      <path d="M57 59 L63 59 L62 66 L58 66 Z" style="fill:var(--k-gravata);stroke:var(--k-traco)"/>
-      <path d="M58 66 L62 66 L65.5 103 L60 110 L54.5 103 Z" style="fill:var(--k-gravata);stroke:var(--k-traco)"/>
-      <path d="M52 56 L45 73 L50 77 L46 81 L60 117 Z" style="fill:var(--k-terno2);stroke:var(--k-traco)"/>
-      <path d="M68 56 L75 73 L70 77 L74 81 L60 117 Z" style="fill:var(--k-terno2);stroke:var(--k-traco)"/>
-      <path d="M69 92 L76 90.5 L76.5 93 L69.5 94.5 Z" style="fill:var(--k-camisa);stroke:var(--k-traco)"/>
-      <circle cx="60" cy="129" r="1.4" style="fill:var(--k-traco)"/>
-      <circle cx="60" cy="147" r="1.4" style="fill:var(--k-traco)"/>
-      <path d="M60 117 V193 M66 152 H77 M51.5 202 L51 376 M69.5 202 L73 374" style="fill:none;stroke:var(--k-traco)"/>
+    <g id="padrinho" style="stroke-width:1.1;stroke-linejoin:round;stroke-linecap:round">
+      <g transform="translate(60 40) scale(1.12 .52) translate(-60 -40)">
+        <ellipse cx="60" cy="400" rx="36" ry="9" style="fill:var(--k-sombra)"/>
+        <path vector-effect="non-scaling-stroke" d="M55.5 30 L64.5 30 L65 58 L55 58 Z" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
+        <ellipse vector-effect="non-scaling-stroke" cx="32" cy="198" rx="4.5" ry="12" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
+        <ellipse vector-effect="non-scaling-stroke" cx="88" cy="198" rx="4.5" ry="12" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M43 184 L59.5 184 L57.5 382 L46 382 Z" style="fill:var(--k-terno2);stroke:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M60.5 184 L77 184 L80 380 L68 382 Z" style="fill:var(--k-terno);stroke:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M45 378 L58 378 Q60 394 54 396 L41 396 Q38 386 45 378 Z" style="fill:var(--k-sapato);stroke:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M67.5 378 L80 376 Q89 383 87 395 L71 395 Q66 390 67.5 378 Z" style="fill:var(--k-sapato);stroke:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M39 64 Q29 98 29 140 L28 190 L37.5 191 L40 140 L45 98 Z" style="fill:var(--k-terno2);stroke:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M81 64 Q91 98 91 140 L92 190 L82.5 191 L80 140 L75 98 Z" style="fill:var(--k-terno2);stroke:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M39 63 Q60 54 81 63 L81 189 Q60 196 39 189 Z" style="fill:var(--k-terno);stroke:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M52 56 L68 56 L60 112 Z" style="fill:var(--k-camisa);stroke:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M57 58 L63 58 L62 67 L58 67 Z" style="fill:var(--k-gravata);stroke:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M58 67 L62 67 L65.5 103 L60 110 L54.5 103 Z" style="fill:var(--k-gravata);stroke:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M52 56 L45 73 L50 77 L46 81 L60 117 Z" style="fill:var(--k-terno2);stroke:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M68 56 L75 73 L70 77 L74 81 L60 117 Z" style="fill:var(--k-terno2);stroke:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M69 91 L76 89 L76.5 94 L69.5 96 Z" style="fill:var(--k-camisa);stroke:var(--k-traco)"/>
+        <ellipse cx="60" cy="130" rx="1.3" ry="2.6" style="fill:var(--k-traco)"/>
+        <ellipse cx="60" cy="150" rx="1.3" ry="2.6" style="fill:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M60 117 V193 M66 156 H77 M51.5 202 L51 374 M69.5 202 L73 372" style="fill:none;stroke:var(--k-traco)"/>
+      </g>
+      <ellipse vector-effect="non-scaling-stroke" cx="60" cy="27" rx="10" ry="13" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
     </g>
 
-    <!-- partes comuns das madrinhas -->
-    <g id="corpo" style="stroke-width:1;stroke-linejoin:round;stroke-linecap:round">
-      <ellipse cx="52" cy="392" rx="5.5" ry="2.4" style="fill:var(--k-pe);stroke:var(--k-traco)"/>
-      <ellipse cx="68" cy="392" rx="5.5" ry="2.4" style="fill:var(--k-pe);stroke:var(--k-traco)"/>
-      <path d="M45 60 Q39.5 62 39 72 L35.5 120 L35 162 Q36.5 170 40.5 166 L41.5 120 L47 82 Z" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
-      <path d="M56 38 L64 38 L64.5 57 L55.5 57 Z" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
-      <path d="M44 60 Q60 53 76 60 L74 86 L46 86 Z" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
-      <ellipse cx="60" cy="28" rx="9.5" ry="12.5" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
+    <!-- partes comuns das madrinhas (já dentro do corpo achatado) -->
+    <g id="corpo">
+      <ellipse vector-effect="non-scaling-stroke" cx="52" cy="392" rx="5.5" ry="4.6" style="fill:var(--k-pe);stroke:var(--k-traco)"/>
+      <ellipse vector-effect="non-scaling-stroke" cx="68" cy="392" rx="5.5" ry="4.6" style="fill:var(--k-pe);stroke:var(--k-traco)"/>
+      <path vector-effect="non-scaling-stroke" d="M45 60 Q39.5 62 39 72 L35.5 120 L35 162 Q36.5 172 40.5 166 L41.5 120 L47 82 Z" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
+      <path vector-effect="non-scaling-stroke" d="M56 30 L64 30 L64.5 57 L55.5 57 Z" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
+      <path vector-effect="non-scaling-stroke" d="M44 60 Q60 53 76 60 L74 86 L46 86 Z" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
     </g>
-    <path id="braco-dir" d="M75 60 Q80.5 62 81 72 L84.5 120 L85 162 Q83.5 170 79.5 166 L78.5 120 L73 82 Z" style="fill:var(--k-pele);stroke:var(--k-traco);stroke-width:1;stroke-linejoin:round"/>
+    <path id="braco-dir" vector-effect="non-scaling-stroke" d="M75 60 Q80.5 62 81 72 L84.5 120 L85 162 Q83.5 172 79.5 166 L78.5 120 L73 82 Z" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
+    <ellipse id="cabeca-f" vector-effect="non-scaling-stroke" cx="60" cy="27" rx="9.5" ry="12.5" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
 
     <!-- 1: alças finas, evasê -->
-    <g id="madrinha-alcas" style="stroke-width:1;stroke-linejoin:round;stroke-linecap:round">
-      <ellipse cx="60" cy="400" rx="44" ry="5" style="fill:var(--k-sombra)"/>
-      <use href="#corpo"/><use href="#braco-dir"/>
-      <path d="M50 60 L51.2 77 M70 60 L68.8 77" style="fill:none;stroke:var(--k-vestido2);stroke-width:1.4"/>
-      <path d="M48 76 Q60 72 72 76 L68 118 C80 200 94 300 104 384 Q82 392 60 389 Q38 392 16 384 C26 300 40 200 52 118 Z" style="fill:var(--k-vestido);stroke:var(--k-traco)"/>
-      <path d="M52 118 Q60 121 68 118 M58 128 C54 220 46 300 38 386 M64 128 C70 220 78 300 86 386" style="fill:none;stroke:var(--k-traco)"/>
+    <g id="madrinha-alcas" style="stroke-width:1.1;stroke-linejoin:round;stroke-linecap:round">
+      <g transform="translate(60 40) scale(1.12 .52) translate(-60 -40)">
+        <ellipse cx="60" cy="400" rx="44" ry="9" style="fill:var(--k-sombra)"/>
+        <use href="#corpo"/><use href="#braco-dir"/>
+        <path vector-effect="non-scaling-stroke" d="M50 60 L51.2 77 M70 60 L68.8 77" style="fill:none;stroke:var(--k-vestido2);stroke-width:1.4"/>
+        <path vector-effect="non-scaling-stroke" d="M48 76 Q60 72 72 76 L68 118 C80 200 94 300 104 384 Q82 392 60 389 Q38 392 16 384 C26 300 40 200 52 118 Z" style="fill:var(--k-vestido);stroke:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M52 118 Q60 121 68 118 M58 128 C54 220 46 300 38 386 M64 128 C70 220 78 300 86 386" style="fill:none;stroke:var(--k-traco)"/>
+      </g>
+      <use href="#cabeca-f"/>
     </g>
 
     <!-- 2: um ombro só, reto com fenda -->
-    <g id="madrinha-ombro" style="stroke-width:1;stroke-linejoin:round;stroke-linecap:round">
-      <ellipse cx="60" cy="400" rx="34" ry="5" style="fill:var(--k-sombra)"/>
-      <use href="#corpo"/><use href="#braco-dir"/>
-      <path d="M47 82 L71 59 Q76 60 76 65 L69 118 C73 200 78 300 85 388 Q60 395 35 388 C41 300 46 200 51 118 Z" style="fill:var(--k-vestido);stroke:var(--k-traco)"/>
-      <path d="M51 118 Q60 121 69 118 M69 252 L74.5 389 M57 126 C56 220 54 300 52 386" style="fill:none;stroke:var(--k-traco)"/>
+    <g id="madrinha-ombro" style="stroke-width:1.1;stroke-linejoin:round;stroke-linecap:round">
+      <g transform="translate(60 40) scale(1.12 .52) translate(-60 -40)">
+        <ellipse cx="60" cy="400" rx="34" ry="9" style="fill:var(--k-sombra)"/>
+        <use href="#corpo"/><use href="#braco-dir"/>
+        <path vector-effect="non-scaling-stroke" d="M47 82 L71 59 Q76 60 76 65 L69 118 C73 200 78 300 85 388 Q60 395 35 388 C41 300 46 200 51 118 Z" style="fill:var(--k-vestido);stroke:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M51 118 Q60 121 69 118 M69 252 L74.5 389 M57 126 C56 220 54 300 52 386" style="fill:none;stroke:var(--k-traco)"/>
+      </g>
+      <use href="#cabeca-f"/>
     </g>
 
     <!-- 3: decote V, manguinhas, faixa, mão na cintura -->
-    <g id="madrinha-v" style="stroke-width:1;stroke-linejoin:round;stroke-linecap:round">
-      <ellipse cx="60" cy="400" rx="48" ry="5" style="fill:var(--k-sombra)"/>
-      <use href="#corpo"/>
-      <path d="M75 62 Q81 63 82 72 L87.5 103 L81.5 108 L75 84 Z" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
-      <path d="M43 60 L54 58 L60 84 L66 58 L77 60 L83 78 L74 80 L69 118 C84 210 100 300 108 386 Q84 396 60 392 Q36 396 12 386 C20 300 36 210 51 118 L46 80 L37 78 Z" style="fill:var(--k-vestido);stroke:var(--k-traco)"/>
-      <path d="M50 116 Q60 121 70 116 L70 121 Q60 126 50 121 Z" style="fill:var(--k-vestido2);stroke:var(--k-traco)"/>
-      <path d="M87.5 102 Q91 110 84.5 114.5 L71.5 124 Q66 125.5 67 119.5 L81.5 107.5 Z" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
-      <path d="M57 130 C50 220 38 300 30 386 M63 130 C70 220 82 300 90 386 M60 128 L60 392" style="fill:none;stroke:var(--k-traco)"/>
+    <g id="madrinha-v" style="stroke-width:1.1;stroke-linejoin:round;stroke-linecap:round">
+      <g transform="translate(60 40) scale(1.12 .52) translate(-60 -40)">
+        <ellipse cx="60" cy="400" rx="48" ry="9" style="fill:var(--k-sombra)"/>
+        <use href="#corpo"/>
+        <path vector-effect="non-scaling-stroke" d="M75 62 Q81 63 82 72 L87.5 103 L81.5 108 L75 84 Z" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M43 60 L54 58 L60 84 L66 58 L77 60 L83 78 L74 80 L69 118 C84 210 100 300 108 386 Q84 396 60 392 Q36 396 12 386 C20 300 36 210 51 118 L46 80 L37 78 Z" style="fill:var(--k-vestido);stroke:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M50 116 Q60 121 70 116 L70 122 Q60 127 50 122 Z" style="fill:var(--k-vestido2);stroke:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M87.5 102 Q91 110 84.5 114.5 L71.5 124 Q66 126 67 119.5 L81.5 107.5 Z" style="fill:var(--k-pele);stroke:var(--k-traco)"/>
+        <path vector-effect="non-scaling-stroke" d="M57 130 C50 220 38 300 30 386 M63 130 C70 220 82 300 90 386 M60 128 L60 392" style="fill:none;stroke:var(--k-traco)"/>
+      </g>
+      <use href="#cabeca-f"/>
     </g>
   </defs>
 </svg>
@@ -284,17 +296,17 @@
     </div>
     <div class="trio surge" role="img" aria-label="Uma madrinha de vestido rosa, um padrinho de terno cinza claro e uma madrinha de vestido verde-água">
       <div class="arco" style="--tom:var(--t-rosa)">
-        <svg class="fig" viewBox="0 0 120 410" style="--k-vestido:#f2a0b4;--k-vestido2:#dd7d97">
+        <svg class="fig" viewBox="0 0 120 236" style="--k-vestido:#f2a0b4;--k-vestido2:#dd7d97">
           <use class="eco" href="#madrinha-alcas" transform="translate(3 2.5)"/><use class="linha" href="#madrinha-alcas"/>
         </svg>
       </div>
       <div class="arco" style="--tom:var(--t-azul)">
-        <svg class="fig" viewBox="0 0 120 410">
+        <svg class="fig" viewBox="0 0 120 236">
           <use class="eco" href="#padrinho" transform="translate(3 2.5)"/><use class="linha" href="#padrinho"/>
         </svg>
       </div>
       <div class="arco" style="--tom:var(--t-verde)">
-        <svg class="fig" viewBox="0 0 120 410" style="--k-vestido:#72c0b1;--k-vestido2:#4e9f90">
+        <svg class="fig" viewBox="0 0 120 236" style="--k-vestido:#72c0b1;--k-vestido2:#4e9f90">
           <use class="eco" href="#madrinha-v" transform="translate(3 2.5)"/><use class="linha" href="#madrinha-v"/>
         </svg>
       </div>
@@ -305,16 +317,17 @@
   <section id="padrinhos" aria-labelledby="t-padrinhos">
     <div class="miolo padrinho">
       <figure class="arco surge" style="--tom:var(--t-azul)">
-        <svg class="fig" viewBox="0 0 120 410" role="img" aria-label="Padrinho de terno cinza claro e gravata azul claro">
+        <svg class="fig" viewBox="0 0 120 236" role="img" aria-label="Padrinho de terno cinza claro, camisa branca e gravata azul claro">
           <use class="eco" href="#padrinho" transform="translate(3 2.5)"/><use class="linha" href="#padrinho"/>
         </svg>
       </figure>
       <div class="surge">
         <p class="sobrelinha">01 · Para eles</p>
         <h2>Padrinhos</h2>
-        <p class="frase">Terno cinza claro com gravata azul claro.</p>
+        <p class="frase">Terno cinza claro, camisa branca e gravata azul claro.</p>
         <dl class="ficha">
           <div><dt>Terno</dt><dd><span class="bola" style="--c:#c6cad0"></span>Cinza claro</dd></div>
+          <div><dt>Camisa</dt><dd><span class="bola" style="--c:#ffffff"></span>Branca</dd></div>
           <div><dt>Gravata</dt><dd><span class="bola" style="--c:#a3cdee"></span>Azul claro</dd></div>
         </dl>
         <p class="nota">A cor da gravata a gente já escolheu. É o detalhe que une todos os padrinhos.</p>
@@ -328,14 +341,14 @@
       <div class="cabeca surge">
         <p class="sobrelinha">02 · Para elas</p>
         <h2>Madrinhas</h2>
-        <p class="frase">Vestido livre, cor livre. Só pedimos <em>alegria</em>.</p>
+        <p class="frase">Vestido longo, modelo e cor livres. Só pedimos <em>alegria</em>.</p>
         <p class="apoio">Escolham o modelo e a cor que mais combinarem com vocês. Separamos algumas inspirações:</p>
       </div>
 
       <div class="lookbook surge">
         <figure>
           <div class="arco" style="--tom:var(--t-rosa)">
-            <svg class="fig" viewBox="0 0 120 410" role="img" aria-label="Vestido longo rosa de alças finas" style="--k-vestido:#f2a0b4;--k-vestido2:#dd7d97">
+            <svg class="fig" viewBox="0 0 120 236" role="img" aria-label="Vestido longo rosa de alças finas" style="--k-vestido:#f2a0b4;--k-vestido2:#dd7d97">
               <use class="eco" href="#madrinha-alcas" transform="translate(3 2.5)"/><use class="linha" href="#madrinha-alcas"/>
             </svg>
           </div>
@@ -343,7 +356,7 @@
         </figure>
         <figure>
           <div class="arco" style="--tom:var(--t-amarelo)">
-            <svg class="fig" viewBox="0 0 120 410" role="img" aria-label="Vestido longo amarelo de um ombro só" style="--k-vestido:#f5c457;--k-vestido2:#e0a93a">
+            <svg class="fig" viewBox="0 0 120 236" role="img" aria-label="Vestido longo amarelo de um ombro só" style="--k-vestido:#f5c457;--k-vestido2:#e0a93a">
               <use class="eco" href="#madrinha-ombro" transform="translate(3 2.5)"/><use class="linha" href="#madrinha-ombro"/>
             </svg>
           </div>
@@ -351,7 +364,7 @@
         </figure>
         <figure>
           <div class="arco" style="--tom:var(--t-verde)">
-            <svg class="fig" viewBox="0 0 120 410" role="img" aria-label="Vestido longo verde-água com decote V" style="--k-vestido:#72c0b1;--k-vestido2:#4e9f90">
+            <svg class="fig" viewBox="0 0 120 236" role="img" aria-label="Vestido longo verde-água com decote V" style="--k-vestido:#72c0b1;--k-vestido2:#4e9f90">
               <use class="eco" href="#madrinha-v" transform="translate(3 2.5)"/><use class="linha" href="#madrinha-v"/>
             </svg>
           </div>
@@ -375,7 +388,7 @@
         <div class="regras surge">
           <div class="regra pode">
             <h3><span class="sinal" aria-hidden="true">✓</span>Pode</h3>
-            <ul><li>Qualquer modelo</li><li>Cores alegres</li></ul>
+            <ul><li>Vestido longo, qualquer modelo</li><li>Cores alegres</li></ul>
           </div>
           <div class="regra nao">
             <h3><span class="sinal" aria-hidden="true">✕</span>Não pode</h3>
